@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font-awesome -->
+    <link
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous"/>
+    <!-- progress File  -->
+    <link rel="stylesheet" href="css/progress.css">
+    <!-- Main styleSheet -->
+    <link rel="stylesheet" href="css/video player.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Custom Video player</h1>
+    <!-- Main Video -->
+    <video
+    height="720" 
+    class="screen"
+    id="video"
+    src="videos/45746353_116343150291530_6022662973148798412_n.mp4"
+    poster="img/poster.png"
+    ></video>
+     <!-- Controlls Btn -->
+    <div class="controls">
+        <button class="btn" id="play">
+            <i class="fa fa-play fa-2x"></i></button>
+        <button class="btn" id="stop">
+            <i class="fa fa-stop fa-2x"></i></button>
+        <!-- video input range -->
+        <input 
+        type="range"
+        id="progress" 
+        class="progress" 
+        min="0"
+        max="100"
+        step="0.1" 
+        value="0"
+        />
+        <!-- Time Stamp -->
+        <span class="timestamp" id="timestamp">00:00</span>
+    </div>
+     
+<script src="video player.js"></script>
+</body>
+</html>
+
+
+<!-- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs -->
